@@ -149,3 +149,36 @@ footer {
 footer p {
     margin: 0; /* Remove default margin for the paragraph inside the footer */
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.songList {
+    /* Add styling for the song list container */
+    /* For example, you can use flexbox for better alignment */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.songItemContainer {
+    /* Add styling for the song item container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.songItem {
+    /* Add styling for each song item */
+    width: 48%; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .songItem {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
